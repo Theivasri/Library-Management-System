@@ -4,9 +4,10 @@ public class LibraryItem
     public string Id;
     public string Title;
 
-    public LibraryItem(string title)
+    public LibraryItem(string title, string id)
     {
         Title = title;
+        Id = id;
     }
     public LibraryItem(){}
 
