@@ -13,15 +13,21 @@ Console.WriteLine("------------Pay Due Amount for extra days----------");
 Console.WriteLine("Number of days : ");
 int days = int.Parse(Console.ReadLine());
 var due = 15;
+int diff = 0;
 var fine = 0;
 if (days > due)
 {
-    var diff = days - due;
-    for (int i = 1; i <= diff; i++)
-    {
-        fine += 2;
-    }
+    diff = days - due;
+    fine = diff * 2;
 }
 Console.WriteLine($"The Fine amount you have to pay  : {fine}");
-Console.ReadKey();
+Console.WriteLine("Do you have membership?..");
+bool isMembership = bool.Parse(Console.ReadLine());
+double final_fine_amount = 0;
+if (isMembership)
+{
+    final_fine_amount = fine - (fine * 0.1);
+}
+Console.WriteLine($"If you have membership this is your fine amount : {final_fine_amount}");
 Console.WriteLine("Press any key to exit..");
+Console.ReadKey();
