@@ -15,9 +15,12 @@ public class Book : LibraryItem
 
     public Book(string title, string author, string isbn, string id) : base(title, id)
     {
-
-        ISBN = isbn;
         Id = id;
+        if (isbn.Length != 16)
+        {
+           throw new InvalidBookException("Lenght ISBN Number should be 16..");
+        }
+        ISBN = isbn;
     }
     public Book(){}
     public void Display()
