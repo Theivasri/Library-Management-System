@@ -1,4 +1,4 @@
-using System.Dynamic;
+//using System.Dynamic;
 using libraryManagement;
 public class Magazine : LibraryItem
 {
@@ -8,10 +8,11 @@ public class Magazine : LibraryItem
 
         IssueNumber = issueNumber;
     }
-    public void Showinfo()
+    public override void Showinfo()
     {
+        Console.WriteLine("-------------Magazine Details-------------");
         Console.WriteLine($"Magazine ID is : {Id}");
         Console.WriteLine($"Ttitle of Magazine is : {Title}");
-        Console.WriteLine($"Issue Number of Magazine is : {Title}");
+        Console.WriteLine($"Issue Number of Magazine is : {IssueNumber}");
     }
 }

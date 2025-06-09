@@ -12,8 +12,9 @@ public class LibraryItem
     }
     public LibraryItem() { }
 
-    public void Showinfo()
+    public virtual void Showinfo()
     {
+        Console.WriteLine("----------Library Book Details-----------");
         Console.WriteLine($"Book ID is : {Id}");
         Console.WriteLine($"Ttitle of book is : {Title}");
     }

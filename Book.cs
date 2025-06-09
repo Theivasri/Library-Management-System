@@ -24,6 +24,7 @@ public class Book : LibraryItem
     public Book(){}
     public void Display()
     {
+        Console.WriteLine("----------Book Details-----------");
         Console.WriteLine($"Title of the Book : {Title}");
         Console.WriteLine($"Author is : {Author}");
         Console.WriteLine($"ISBN : {ISBN}");
