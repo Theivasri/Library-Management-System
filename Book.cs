@@ -16,8 +16,6 @@ public class Book : LibraryItem
     public Book(string title, string author, string isbn, string id) : base(title, id)
     {
 
-        Title = title;
-        Author = author;
         ISBN = isbn;
         Id = id;
     }

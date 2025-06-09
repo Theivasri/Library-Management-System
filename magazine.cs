@@ -1,11 +1,10 @@
-//using System.Dynamic;
-using libraryManagement;
+namespace libraryManagement;
 public class Magazine : LibraryItem
 {
     public int IssueNumber{ get; set; }
     public Magazine(string title, string id, int issueNumber) : base(title, id)
     {
-
+        Id = id;
         IssueNumber = issueNumber;
     }
     public override void Showinfo()
